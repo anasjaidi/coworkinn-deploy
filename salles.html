@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SALOME FONT -->
+    <link
+      href="//db.onlinewebfonts.com/c/1e20e698946e398f2ad70318ce64c215?family=Salome"
+      rel="stylesheet" type="text/css"/>
+
+    <!-- RUBIK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <!-- OPEN SANS FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <!-- GRIFFY FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap"
+      rel="stylesheet">
+
+
+    <!-- ITALIANO FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet">
+
+
+    <!-- ICONS LIBRARY FONTAWSOME PRO -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+      />
+
+
+    <!-- ANIMATE ON SCROLL STYLESHEET LIBRARY -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- LOCAL STYLESHEET FILE LINK -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>coworkinn</title>
+  </head>
+  <body>
+    <div class="menu-page">
+      <div class="container">
+        <div class="menu-wrapper">
+          <div class="menu">
+            <div class="menu-main">
+              <div class="menu-button" onclick="menuPage()">
+                <i class="fa-solid fa-xmark"></i>Menu
+              </div>
+              <ul>
+                <li>Tarifs</li>
+                <li>Mission</li>
+                <li>
+                  Salles de réunion
+                </li>
+                <li>
+                  Nous contacter
+                </li>
+                <li>
+                  Foire aux questions
+                </li>
+              </ul>
+            </div>
+            <div class="menu-footer">
+              Copyright 2022
+            </div>
+          </div>
+          <div class="spaces">
+            <div class="spaces-main">
+              <h3 class="spaces-title">Nos espaces </h3>
+              <div class="spaces-section">
+                <div class="bureaux-privatifs">
+                  <img src="/imgs/nav-spaces1.png" alt="">
+                  <h4>Bureaux privatifs </h4>
+                </div>
+                <div class="Open-space">
+                  <img src="/imgs/nav-spaces2.png" alt="">
+                  <h4>Open space</h4>
+                </div>
+              </div>
+            </div>
+            <div class="spaces-footer">
+              <a href="" class="primary-button">Je réserve</a>
+              <span class="ou">OU</span>
+              <p>
+                Appelez-nous !
+                <span>06 10 11 88 02</span>
+              </p>
+            </div>
+          </div>
+          <div class="media">
+            <h2>Nos médias</h2>
+            <ul>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper"></div>
+    <header class="bg-[#CCCCF9]">
+      <div class="fixed-header-wrapper ">
+        <div class="container">
+          <div class="nav-parent relative ">
+            <nav class="">
+              <ul class="">
+                <li onclick="menuPage()">Menu</li>
+                <li onclick="spaces()">Espaces <i class="fa-regular
+                    fa-caret-down"></i></li>
+                <li><a href="salles.html">Salles de réunions</a></li>
+                <li><a href="tarif.html">Tarifs</a></li>
+              </ul>
+              <span name="menu-icons">
+                <i class="fa-regular fa-bars" id="menu" onclick="Menu(this)"></i>
+                <i class="fa-sharp fa-solid fa-arrow-left" id="left-arrow"
+                  onclick="Left()"></i>
+              </span>
+              <div class="logo">
+                <img src="/imgs/logo.png" alt="">
+              </div>
+              <div class="nav-tail">
+                <p>
+                  Appelez-nous !
+                  <span>06 10 11 88 02</span>
+                </p>
+                <a class="primary-button" href="reserve.html">Je réserve</a>
+              </div>
+            </nav>
+            <div class="spaces">
+              <h3 class="spaces-title">Nos espaces </h3>
+              <div class="spaces-main">
+                <div class="bureaux-privatifs">
+                  <img src="/imgs/nav-spaces1.png" alt="">
+                  <h4>Bureaux privatifs </h4>
+                </div>
+                <div class="Open-space">
+                  <img src="/imgs/nav-spaces2.png" alt="">
+                  <h4>Open space</h4>
+                </div>
+              </div>
+              <div class="spaces-footer">
+                <a href="" class="primary-button">Je réserve</a>
+                <span class="ou">OU</span>
+                <p>
+                  Appelez-nous !
+                  <span>06 10 11 88 02</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- start main -->
+    <section class="bg-[#CCCCF9]">
+      <div class="container">
+        <div class="salles-intro">
+          <div class="text-info">
+            <h1>Salles de réunion</h1>
+            <p>
+              Profitez du confort et des nombreux avantages mis à votre
+              disposition dans nos salles de réunion, le tout dans un cadre
+              chaleureux et convivial.
+            </p>
+          </div>
+          <div class="intro-image">
+            <img src="/imgs/reservation-intro-image.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+
+      <div class="container">
+        <div class="salles-gallery">
+          <img src="/imgs/salles5.png" alt="" />
+          <img src="/imgs/salles1.png" alt="" />
+          <img src="/imgs/salles2.png" alt="" />
+          <img src="/imgs/salles3.png" alt="" />
+          <img src="/imgs/salles4.png" alt="" />
+        </div>
+        <section class="main-text">
+          <p>
+            Le studio c'est comme chez vous ! Que vous soyez résidents
+            permanents ou simplement de passage, chacun profitera de prestations
+            adaptées à ses attentes et d'un accueil chaleureux. Car nos
+            coworking sont avant tout des espaces pensés autour du bien-être et
+            de la convivialité au travail. C'est donc dans cette optique que
+            nous vous proposons une salle de réunion à l’heure ou à la journée
+            au sein de chacun des deux espaces. Ces lieux chaleureux et adaptés
+            au travail de groupe vous permettront de vous isoler pour travailler
+            confortablement seul(e) ou à plusieurs, qu'il s'agisse de sessions
+            de formation, de team building, de recrutements etc... Tout le
+            matériel nécessaire à un travail serein et des échanges de qualité
+            est mis à votre disposition (Écrans HD pour vos présentations,
+            tableau blanc pour les brainstormings, thé, café et snacks pour les
+            travailleurs acharnés et affamés). Vous avez un besoin particulier
+            qui n'est pas inclu dans notre offre de base ? Il est tout à fait
+            envisageable d'en discuter. Contactez-nous par mail ou par téléphone
+            et dites-nous ce dont vous avez besoin. Nous verrons alors s’il est
+            possible de vous proposer une solution.
+          </p>
+        </section>
+        <section class="salles-reservations">
+          <div class="reservation-section">
+            <div class="reservation-head">
+              <img src="/imgs/salles-reservation1.png" alt="" />
+              <h3>Gros <span class="block">Horloge</span></h3>
+              <h4>À partir de 24€ HT / heure</h4>
+            </div>
+            <div class="reservation-main">
+              <p>
+                Située au centre du triangle d’or Rouennais, à deux pas du
+                fameux Gros Horloge, lieu emblématique de Rouen, découvrez cette
+                salle de réunion spacieuse, confortable, et tout équipée pouvant
+                accueillir jusqu'à dix personnes.
+              </p>
+              <p>
+                Cet espace dispose d'un équipement multimédia haut de gamme et
+                de tout le nécessaire pour des brainstormings et échanges
+                constructifs et créatifs entre professionnels.
+              </p>
+            </div>
+            <div class="reservation-action">
+              <button>Réserver</button>
+            </div>
+          </div>
+          <div class="reservation-section">
+            <div class="reservation-head">
+              <img src="/imgs/gallery1-1.png" alt="" />
+              <h3>Pasteur</h3>
+              <h4>À partir de 24€ HT / heure</h4>
+            </div>
+            <div class="reservation-main">
+              <p>
+                Nichée au coeur du Studio Coworking Pasteur, cette salle de
+                réunion intimiste installée dans une alcove en pierre est un
+                espace de travail agréable, moderne et cosy pouvant accueillir
+                jusqu'à six personnes assises.
+              </p>
+              <p>
+                Vous profiterez d'un équipement multimédia de qualité et d'un
+                lieu atypique en plein coeur de Rouen.
+              </p>
+            </div>
+            <div class="reservation-action">
+              <button>Réserver</button>
+            </div>
+          </div>
+        </section>
+        <!-- start prenez place section  -->
+        <div class="prenez-place">
+          <h2>Prenez <span>Place!</span></h2>
+          <form action="">
+            <input type="email" name="" id=""
+              placeholder=" @ Votre adresse e-mail">
+            <button>Je me renseigne !</button>
+          </form>
+        </div>
+        <!-- end prenez place section  -->
+      </div>
+    </main>
+    <!-- end main -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <h2> Le
+          <span>Coworkinn</span> </h2>
+        <div class="links">
+          <ul>
+            <li class="first-link">Découvrir</li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="./tarif.html">Tarifs</a></li>
+            <li><a href="./mission.html">Mission</a></li>
+            <li><a href="salles.html">Salles de réunion
+              </a></li>
+            <li><a href="contact.html">Nous contacter
+              </a></li>
+            <li><a href="contact.html">Foire aux questions </a></li>
+          </ul>
+          <ul>
+            <li class="first-link">Médias</li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Linkedin</a></li>
+          </ul>
+          <ul>
+            <li class="first-link">Contact</li>
+            <li><a href="">06 31 29 32 38</a></li>
+            <li><a href="/contact.html">@ Nous contacter -></a></li>
+          </ul>
+        </div>
+        <div class="footer-tail">
+          <p>Coworkinn</p>
+          <p>© copyright 2022</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- menu script -->
+    <script src="js/menu.js" defer></script>
+    <script src="js/spaces-menu.js" defer></script>
+    <!-- main scripts -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

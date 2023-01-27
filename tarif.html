@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SALOME FONT -->
+    <link
+      href="//db.onlinewebfonts.com/c/1e20e698946e398f2ad70318ce64c215?family=Salome"
+      rel="stylesheet" type="text/css"/>
+
+    <!-- RUBIK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <!-- OPEN SANS FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <!-- GRIFFY FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap"
+      rel="stylesheet">
+
+
+    <!-- ITALIANO FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet">
+
+
+    <!-- ICONS LIBRARY FONTAWSOME PRO -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+      />
+
+
+    <!-- ANIMATE ON SCROLL STYLESHEET LIBRARY -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- LOCAL STYLESHEET FILE LINK -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>coworkinn</title>
+  </head>
+  <body>
+    <div class="menu-page">
+      <div class="container">
+        <div class="menu-wrapper">
+          <div class="menu">
+            <div class="menu-main" >
+              <div class="menu-button" onclick="menuPage()">
+                <i class="fa-solid fa-xmark"></i>Menu
+              </div>
+              <ul>
+                <li>Tarifs</li>
+                <li>Mission</li>
+                <li>
+                  Salles de réunion
+                </li>
+                <li>
+                  Nous contacter
+                </li>
+                <li>
+                  Foire aux questions
+                </li>
+              </ul>
+            </div>
+            <div class="menu-footer">
+              Copyright 2022
+            </div>
+          </div>
+          <div class="spaces">
+            <div class="spaces-main">
+              <h3 class="spaces-title">Nos espaces </h3>
+              <div class="spaces-section">
+                <div class="bureaux-privatifs">
+                  <img src="/imgs/nav-spaces1.png" alt="">
+                  <h4>Bureaux privatifs </h4>
+                </div>
+                <div class="Open-space">
+                  <img src="/imgs/nav-spaces2.png" alt="">
+                  <h4>Open space</h4>
+                </div>
+              </div>
+            </div>
+            <div class="spaces-footer">
+              <a href="" class="primary-button">Je réserve</a>
+              <span class="ou">OU</span>
+              <p>
+                Appelez-nous !
+                <span>06 10 11 88 02</span>
+              </p>
+            </div>
+          </div>
+          <div class="media">
+            <h2>Nos médias</h2>
+            <ul>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper"></div>
+    <header>
+      <div class="fixed-header-wrapper">
+        <div class="container">
+          <div class="nav-parent relative">
+            <nav>
+              <ul class="">
+                <li onclick="menuPage()">Menu</li>
+                <li onclick="spaces()">Espaces <i class="fa-regular
+                    fa-caret-down"></i></li>
+                <li><a href="salles.html">Salles de réunions</a></li>
+                <li><a href="tarif.html">Tarifs</a></li>
+              </ul>
+              <span name="menu-icons">
+                <i class="fa-regular fa-bars" id="menu" onclick="Menu(this)"></i>
+                <i class="fa-sharp fa-solid fa-arrow-left" id="left-arrow"
+                  onclick="Left()"></i>
+              </span>
+              <div class="logo">
+                <img src="/imgs/logo.png" alt="">
+              </div>
+              <div class="nav-tail">
+                <p>
+                  Appelez-nous !
+                  <span>06 10 11 88 02</span>
+                </p>
+                <a class="primary-button" href="reserve.html">Je réserve</a>
+              </div>
+            </nav>
+            <div class="spaces">
+              <h3 class="spaces-title">Nos espaces </h3>
+              <div class="spaces-main">
+                <div class="bureaux-privatifs">
+                  <img src="/imgs/nav-spaces1.png" alt="">
+                  <h4>Bureaux privatifs </h4>
+                </div>
+                <div class="Open-space">
+                  <img src="/imgs/nav-spaces2.png" alt="">
+                  <h4>Open space</h4>
+                </div>
+              </div>
+              <div class="spaces-footer">
+                <a href="" class="primary-button">Je réserve</a>
+                <span class="ou">OU</span>
+                <p>
+                  Appelez-nous !
+                  <span>06 10 11 88 02</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- start main section -->
+    <main>
+      <div class="container">
+        <!-- start intro -->
+        <div class="tarifs-intro">
+          <h1>Sans engagement</h1>
+          <p>Des tarifs qui grandissent en même temps que votre activité</p>
+        </div>
+        <!-- end intro -->
+        <!-- start tarifs -->
+        <div class="tarifs">
+          <div class="tarif">
+            <hr />
+            <div class="tarif-type">
+              <h3>Nomade</h3>
+              <p>Votre bureau à la journée, demi-journée ou à l'heure !</p>
+            </div>
+            <div class="tarif-price">
+              <p>A partir de</p>
+              <h3>3€ <span>ht</span></h3>
+              <p>Pour 1 heure</p>
+            </div>
+            <div class="tarif-action">
+              <a href="">Sélectionner</a>
+            </div>
+            <div class="tarif-features">
+              <ul>
+                <li>Bureaux et chaises ergonomiques</li>
+                <li>Thé, café et snack à volonté</li>
+                <li>Cabines téléphoniques</li>
+                <li>Fibre professionnelle</li>
+                <li>Imprimante multifonction</li>
+                <li>Ménage plusieurs fois par semaine</li>
+                <li>Accés de 9h à 18h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tarif">
+            <hr />
+            <div class="tarif-type">
+              <h3>Dédié</h3>
+              <p>Votre bureau privé dans un open space </p>
+            </div>
+            <div class="tarif-price">
+              <p>A partir de</p>
+              <h3>219€ <span>ht</span></h3>
+              <p>Par mois</p>
+            </div>
+            <div class="tarif-action">
+              <a href="">Sélectionner</a>
+            </div>
+            <div class="tarif-features">
+              <ul>
+                <li> Bureaux et chaises ergonomiques
+                </li>
+                <li>Thé, café et snack à volonté
+                </li>
+                <li>Cabines téléphoniques
+                </li>
+                <li>Fibre professionnelle
+                </li>
+                <li>Imprimante multifonction
+                </li>
+                <li>Ménage plusieurs fois par semaine
+                </li>
+                <li>Casier à disposition
+                </li>
+                <li>
+                  Crédits pour les salles de réunion
+
+                </li>
+                <li>
+                  Casier à disposition
+
+                </li>
+                <li>
+                  Crédits pour les salles de réunion
+
+                </li>
+                <li>
+                  Accés 24h/7j
+
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tarif">
+            <hr />
+            <div class="tarif-type">
+              <h3>Colocation</h3>
+              <p>Votre bureau privé dans un espace fermé</p>
+            </div>
+            <div class="tarif-price">
+              <p>A partir de</p>
+              <h3>279€ <span>ht</span></h3>
+              <p>par mois</p>
+            </div>
+            <div class="tarif-action">
+              <a href="">Sélectionner</a>
+            </div>
+            <div class="tarif-features">
+              <ul>
+                c
+              </ul>
+            </div>
+          </div>
+          <div class="tarif">
+            <hr />
+            <div class="tarif-type">
+              <h3>Privé</h3>
+              <p>Votre bureau dans un espace fermé</p>
+            </div>
+            <div class="tarif-price">
+              <p>A partir de</p>
+              <h3>549€ <span>ht</span></h3>
+              <p>par mois</p>
+            </div>
+            <div class="tarif-action">
+              <a href="">Sélectionner</a>
+            </div>
+            <div class="tarif-features">
+              <ul>
+                <li>Bureaux et chaises ergonomiques</li>
+                <li>Thé, café et snack à volonté</li>
+                <li>Cabines téléphoniques</li>
+                <li>Fibre professionnelle</li>
+                <li>Imprimante multifonction</li>
+                <li>Ménage plusieurs fois par semaine</li>
+                <li>Bureau privé fermé avec clé</li>
+                <li>Crédits pour les salles de réunion</li>
+                <li>Accés 24h/7j</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end tarifs -->
+        <!-- start tarif card -->
+        <div class="tarifs-card">
+          <img src="/imgs/tarifs-card.png" alt="" />
+          <div class="tarifs-card-title">
+            <h3>Salles de réunion</h3>
+            <p>
+              Profitez de nos salles de réunion qui peuvent accueillir jusqu'à
+              10 personnes.
+            </p>
+          </div>
+          <div class="tarfis-card-features">
+            <ul>
+              <li>Thé, café et snacks à volonté</li>
+              <li>Accès aux espaces communs</li>
+              <li>Fibre professionnelle</li>
+              <li>TV Haute définition</li>
+              <li>Airplay</li>
+            </ul>
+          </div>
+          <div class="tarifs-card-footer">
+            <div class="tarifs-card-price">
+              <p>À partir de</p>
+              <h3>14€ <span>ht</span></h3>
+              <p>par heure</p>
+            </div>
+            <div class="tarifs-card-action">
+              <a href="#">Sélectionner</a>
+            </div>
+          </div>
+        </div>
+        <!-- end tarif card -->
+        <!-- start faqs -->
+        <div class="faqs">
+          <h2 class="title">FAQ</h2>
+          <div class="faq">
+            <div class="question">
+              <h3>Comment imprimer ?</h3>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+            <div class="response">
+              Pour imprimer, suivez le guide ! Une fois membre de notre
+              coworking, nous envoyons un lien directement à l'adresse mail que
+              vous nous avez communiquée. Vous pouvez alors vous connecter à
+              votre compte .
+              <span>Formats acceptés : A4 / A3 - N&B / Couleur Si vous</span>
+              ne voyez pas vos impressions dans l'espace imprimante, il est
+              possible qu'il y ait un délai de 2 à 3 minutes. Passé ce délai,
+              n'hésitez pas à nous contacter.
+            </div>
+            <hr />
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3>À quelle fréquence mon bureau sera-t-il nettoyé ?</h3>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+            <div class="response">
+              Pour travailler dans de bonnes conditions, il est indispensable
+              d'être dans un lieu propre et agréable. Notre fée du logis passe
+              au minimum deux fois par semaine pour faire place nette dans les
+              locaux. Dans le cas où vous auriez besoin d'un nettoyage
+              supplémentaire de votre espace de travail, vous pouvez nous en
+              faire la demande par mail : contact@lestudio-rouen.com ou par
+              téléphone au 06 31 29 32 38.
+            </div>
+            <hr />
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3>Que faire si j'ai besoin davantage d'espace ?</h3>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+            <div class="response">
+              Votre bureau vous convient mais vous pensez manquer d'espace ?
+              Contactez-nous par téléphone au 06 31 29 32 38 ou par mail :
+              contact@lestudio-rouen.com
+            </div>
+            <hr />
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3>Comment consulter ma facture ?</h3>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+            <div class="response">
+              Vous pouvez consulter votre facture directement sur notre
+              application "Le Studio". Il suffira de cliquer sur le lien reçu
+              par mail à l'adresse que vous nous avez indiquée lors de votre
+              arrivée. Une fois connecté(e), vous avez alors accès à l'ensemble
+              des informations liées à votre entreprise.
+            </div>
+            <hr />
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3>Quelle est la politique d'annulation ?</h3>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+            <div class="response">
+              Au Studio Coworking, nos abonnements et nos bureaux nomades
+              peuvent être annulés à tout moment pour la fin du mois en cours.
+              <br>
+              Si vous annulez le 15 mai, votre abonnement restera actif jusqu'au
+              31 mai. <br> Pour effectuer cette démarche, il suffit d'envoyer
+              une
+              notification par mail à l'adresse suivante :
+              contact@lestudio-rouen.com
+            </div>
+            <hr />
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3>Quelle est la politique en matière de visiteurs ?</h3>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+            <div class="response">
+              Dans le cas où vous louez un bureau privé entier, n'importe quel
+              visiteur est accepté à l'intérieur. Vous en êtes responsable ! Si
+              vous êtes en forfait nomade ou en bureau dédié, les visiteurs sont
+              acceptés seulement dans le cadre d'une réservation de salle de
+              réunion, dans le cas contraire, des frais additionnels seront à
+              prévoir !
+            </div>
+            <hr />
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3>
+                J'ai un stagiaire. Est-il autorisé à venir travailler au
+                coworking ?
+              </h3>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+            <div class="response">
+              Vous avez engagé un stagiaire pour quelques mois. Deux cas de
+              figure s'offrent à vous. <br> <br> <ul class="list-disc
+                list-inside"
+                style="list-style-type: disc;">
+                <li>Vous êtes locataire d'un bureau privé
+                  entier. Votre stagiaire pourra alors accéder au coworking au
+                  même
+                  titre que les membres de votre équipe.</li>
+                <li>
+                  Vous possédez le forfait
+                  nomade ou un bureau dédié, il vous faudra associer votre
+                  stagiaire
+                  à votre compte moyennant un supplément tarifaire*. Votre
+                  stagiaire
+                  pourra alors lui aussi bénéficier d'une offre "nomade" ou
+                  "résident".
+                </li>
+              </ul> <br> *Les suppléments tarifaires évoluent en fonction du
+              type d'offre sélectionnée pour votre stagiaire. En cas de
+              question, nous restons joignables par téléphone au 06 31 29 32 38
+              ou par mail : contact@lestudio-rouen.com
+            </div>
+            <hr />
+          </div>
+          <div class="faq">
+            <div class="question">
+              <h3>Puis-je apporter mes propres meubles ?</h3>
+              <i class="fa-regular fa-plus"></i>
+            </div>
+            <div class="response">
+              Lorsque vous êtes membre de notre studio, vous en êtes locataire.
+              Nous ne voyons aucun inconvénient à ce que vous apportiez vos
+              propres objets, décorations* et meubles. Notre priorité est votre
+              confort! <br> <br>
+              *Les trous aux murs ne sont pas autorisés dans nos
+              locaux.
+            </div>
+            <hr />
+          </div>
+        </div>
+        <!-- end faqs -->
+      </div>
+    </main>
+    <!-- end main section -->
+    <!-- start main section -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <h2> Le
+          <span>Coworkinn</span> </h2>
+        <div class="links">
+          <ul>
+            <li class="first-link">Découvrir</li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="./tarif.html">Tarifs</a></li>
+            <li><a href="./mission.html">Mission</a></li>
+            <li><a href="salles.html">Salles de réunion
+              </a></li>
+            <li><a href="contact.html">Nous contacter
+              </a></li>
+            <li><a href="contact.html">Foire aux questions </a></li>
+          </ul>
+          <ul>
+            <li class="first-link">Médias</li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Linkedin</a></li>
+          </ul>
+          <ul>
+            <li class="first-link">Contact</li>
+            <li><a href="">06 31 29 32 38</a></li>
+            <li><a href="/contact.html">@ Nous contacter -></a></li>
+          </ul>
+        </div>
+        <div class="footer-tail">
+          <p>Coworkinn</p>
+          <p>© copyright 2022</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- menu script -->
+    <script src="js/menu.js" defer></script>
+    <script src="js/spaces-menu.js" defer></script>
+    <!-- main scripts -->
+    <script src="js/main.js"></script>
+    <!-- faqs scripts -->
+    <script src="js/faqs.js"></script>
+    <body>
+
+    </body>
+  </html>
